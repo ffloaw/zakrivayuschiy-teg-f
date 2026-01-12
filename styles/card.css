@@ -1,0 +1,93 @@
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: var(--content-width);
+  height: clamp(758px, 80vw, 956px);
+  background-color: #FFFFFF;
+  border: 2px solid #000000;
+}
+
+.card_title {
+  font-weight: var(--font-weight-715);
+  font-style: var(--font-style-bold);
+  padding: 4px 10px 4px 10px;
+  word-spacing: -2.5px;
+}
+
+.card_contnet {
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  gap: 25px;
+  font-weight: var(--font-weight-410);
+  font-size: var(--card-text-size);
+  line-height: 21px;
+  font-style: normal;
+}
+
+.image_container {
+  height: clamp(371px, 80vw, 696px);
+  
+}
+
+.image_card {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center right;  
+}
+
+.label_card {
+  display: flex;
+  mix-blend-mode: hard-light;
+  justify-self: end;
+  font-family: var(--accent-font);
+  font-weight: var(--font-weight-410);
+  font-size: 14px;
+  text-shadow: 1px #FFFFFF;
+  top: 39px;
+  right: 25px;
+}
+
+.card__icon-button {
+  background-color: transparent;
+  border: none;
+}
+
+.card__like-button {
+  width: 130px;
+  height: 38px;
+  border: 2px solid #000000;
+  background-color: transparent;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+
+}
+
+.button__text {
+  font-family: var(--accent-font);
+  font-weight: var(--font-weight-400);
+  font-size: 14px;
+}
+
+.card_button_container {
+  display: flex;
+  justify-content: right;
+  padding-right: 25px;
+}
+
+@supports((text-stroke: 1px #FFFFFF) or (-webkit-text-stroke: 1px #FFFFFF)) {
+  .label_card {
+    -webkit-text-stroke: 1px #FFFFFF;
+    text-stroke: 1px #FFFFFF;
+    text-shadow: none;
+  }
+}

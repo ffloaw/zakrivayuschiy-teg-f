@@ -10,14 +10,52 @@
     <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="stylesheet" href="./styles/variables.css" />
     <link rel="stylesheet" href="./styles/globals.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/card.css" />
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/animations.css" />
   </head>
   <body class="page">
-    <header class="header">
-      
+    <header class="header width">
+      <div class="header_title_background">
+        <h1 class="html-title">&lt;/HTML&gt;</h1>
+        <h2 class="tag-title">Закрывающий тег</h2>
+      </div>
     </header>
-    <main></main>
+    <main>
+      <section class="cards">
+        <article class="card">
+          <h3 class="card_title">
+            Фритрек и нулевой спринт: Подготовка к работе
+          </h3>
+          <div class="image_container">
+            <label class="label_card" for="">&lt;/HTML&gt;</label>
+            <img class="image_card" src="./images/zerosprint.png" alt="">
+          </div>
+          <div class="card_contnet">
+            <p class="card_text_main">
+              Это было самое начало пути.
+              На этом этапе важно было проникнуться основами
+              и настроиться на учёбу. И, возможно, подумать, 
+              как новые знания могут повлиять на ваше будущее.
+            </p>
+            <p class="card_text_memories">
+              Место для ваших воспоминаний о начале обучения.
+            </p>
+          </div>
+          <div class="card_button_container">
+            <button class="card__icon-button">
+              <img class="like-icon" src="./svg/heart.svg" alt="Сердце">
+            </button>
+            <button class="card__like-button">
+              <span class="button__text">
+                Like
+              </span>
+            </button>
+          </div>
+        </article>
+      </section>        
+    </main>
     <script src="./scripts/like.js"></script>
   </body>
 </html>
