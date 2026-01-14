@@ -2,15 +2,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
+  flex-direction: column;
+  gap: 50px;
 }
 
 .card {
   display: flex;
   flex-direction: column;
   width: var(--content-width);
-  height: clamp(758px, 80vw, 956px);
-  background-color: #FFFFFF;
   border: 2px solid #000000;
 }
 
@@ -30,10 +29,12 @@
   font-size: var(--card-text-size);
   line-height: 21px;
   font-style: normal;
+  word-spacing: 2.5px;
 }
 
 .image_container {
-  height: clamp(371px, 80vw, 696px);
+  position: relative;
+  height: clamp(375px, 80vw, 696px);
   
 }
 
@@ -41,10 +42,13 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center right;  
+  object-position: center right;
+  border-top: 2px solid #000000;
+  border-bottom: 2px solid #000000;
 }
 
 .label_card {
+  position: absolute;
   display: flex;
   mix-blend-mode: hard-light;
   justify-self: end;
@@ -52,13 +56,15 @@
   font-weight: var(--font-weight-410);
   font-size: 14px;
   text-shadow: 1px #FFFFFF;
-  top: 39px;
+  top: 27px;
   right: 25px;
 }
 
 .card__icon-button {
   background-color: transparent;
   border: none;
+  padding: 0;
+  padding-right: 6px;
 }
 
 .card__like-button {
@@ -82,9 +88,21 @@
   display: flex;
   justify-content: right;
   padding-right: 25px;
+  padding-bottom: 25px;
 }
 
-@supports((text-stroke: 1px #FFFFFF) or (-webkit-text-stroke: 1px #FFFFFF)) {
+.save_button {
+  display: flex;
+  flex-direction: column;
+}
+
+.save_button_text {
+  font-family: var(--accent-font);
+  font-size: 14px;
+  font-weight: var(--font-weight-400);
+}
+
+@supports ((text-stroke: 1px #FFFFFF) or (-webkit-text-stroke: 1px #FFFFFF)) {
   .label_card {
     -webkit-text-stroke: 1px #FFFFFF;
     text-stroke: 1px #FFFFFF;
