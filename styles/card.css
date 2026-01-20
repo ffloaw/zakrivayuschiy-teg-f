@@ -4,6 +4,9 @@
   align-items: center;
   flex-direction: column;
   gap: 50px;
+  background-color: #FFFFFF;
+  width: var(--content-width);
+  margin: 0 auto;
 }
 
 .card {
@@ -64,7 +67,7 @@
   background-color: transparent;
   border: none;
   padding: 0;
-  padding-right: 6px;
+  padding-right: 1px;
 }
 
 .card__like-button {
@@ -87,19 +90,39 @@
 .card_button_container {
   display: flex;
   justify-content: right;
+  align-items: center;
+  gap: 6px;
   padding-right: 25px;
+  padding-bottom: 25px;
+}
+
+.save_button_container {
+  display: flex;
+  justify-content: center;
   padding-bottom: 25px;
 }
 
 .save_button {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #000000;
+  background-color: transparent;
+  gap: 5px;
+  padding: 0;
+  padding: 17px 18px 15px 18px;
+}
+
+.save_button_icon {
+  display: block;
 }
 
 .save_button_text {
   font-family: var(--accent-font);
   font-size: 14px;
   font-weight: var(--font-weight-400);
+  text-align: center;
 }
 
 @supports ((text-stroke: 1px #FFFFFF) or (-webkit-text-stroke: 1px #FFFFFF)) {

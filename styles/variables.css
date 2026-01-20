@@ -8,7 +8,7 @@
   --font-weight-715: 715;
   --font-style-bold: Bold;
   --card-text-size: 18px;
-  --content-width: clamp(375px, 94.67%, 700px);
+  --content-width: clamp(320px, 100%, 700px);
   --page-background-gradient: repeating-linear-gradient(
     90deg,
     #d3d3d3 0 2px,
