@@ -4,7 +4,123 @@
   align-items: center;
   flex-direction: column;
   gap: 50px;
+  width: var(--content-width);
+  margin: 0 auto;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: var(--content-width);
+  border: 2px solid #000000;
   background-color: #FFFFFF;
+}
+
+.card_title {
+  font-weight: var(--font-weight-715);
+  font-style: var(--font-style-bold);
+  padding: 4px 10px 4px 10px;
+  word-spacing: -2.5px;
+}
+
+.card_contnet {
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  gap: 25px;
+  font-weight: var(--font-weight-410);
+  font-size: var(--card-text-size);
+  line-height: 21px;
+  font-style: normal;
+  word-spacing: 2.5px;
+}
+
+.image_container {
+  position: relative;
+  height: clamp(375px, 80vw, 696px);
+  
+}
+
+.image_card {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center right;
+  border-top: 2px solid #000000;
+  border-bottom: 2px solid #000000;
+}
+
+.label_card {
+  position: absolute;
+  display: flex;
+  mix-blend-mode: hard-light;
+  justify-self: end;
+  font-family: var(--accent-font);
+  font-weight: var(--font-weight-410);
+  font-size: 14px;
+  text-shadow: 1px #FFFFFF;
+  top: 27px;
+  right: 25px;
+}
+
+.card__icon-button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  padding-right: 1px;
+}
+
+.card__like-button {
+  width: 130px;
+  height: 38px;
+  border: 2px solid #000000;
+  background-color: transparent;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+
+}
+
+.button__text {
+  font-family: var(--accent-font);
+  font-weight: var(--font-weight-400);
+  font-size: 14px;
+}
+
+.card_button_container {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  gap: 6px;
+  padding-right: 25px;
+  padding-bottom: 25px;
+}
+
+.save_button_container {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 25px;
+}
+
+.save_button_icon {
+  display: block;
+  width: 28px;
+  height: 28px;
+}
+
+.save_button_text {
+  font-family: var(--accent-font);
+  font-size: 14px;
+  font-weight: var(--font-weight-400);
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
   width: var(--content-width);
   margin: 0 auto;
 }
@@ -108,7 +224,7 @@
   align-items: center;
   justify-content: center;
   border: 2px solid #000000;
-  background-color: transparent;
+  background-color: #FFFFFF;
   gap: 5px;
   padding: 0;
   padding: 17px 18px 15px 18px;
@@ -125,10 +241,78 @@
   text-align: center;
 }
 
+.save_dialog {
+  width: 341px;
+  height: 191px;
+  border: 2px solid #000000;
+  background-color: #ffffff;
+  display: none;
+  padding: 0;
+}
+
+.save_dialog[open] {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.save_dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.save_dialog_content {
+  width: 261px;
+}
+
+.save_dialog[open] .save_dialog_content {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.save_dialog_icon {
+  width: 39px;
+  height: 39px;
+}
+
+.save_dialog_text {
+  width: 100%;
+  font-family: var(--accent-font);
+  font-weight: var(--font-weight-400);
+  font-size: 14px;
+  line-height: 150%;
+  text-transform: uppercase;
+}
+
+.save_dialog_button {
+  width: 261px;
+}
+
 @supports ((text-stroke: 1px #FFFFFF) or (-webkit-text-stroke: 1px #FFFFFF)) {
   .label_card {
     -webkit-text-stroke: 1px #FFFFFF;
     text-stroke: 1px #FFFFFF;
     text-shadow: none;
+  }
+}
+
+@media (width >= 400px) {
+  .save_button {
+    display: flex;
+    flex-direction: row;
+    width: 335px;
+    height: 55px;
+    padding: 20px;
+  }
+
+  .save_button_icon {
+    width: 21px;
+    height: 21px;
+  }
+
+  .save_button_text {
+    width: 300px;
   }
 }

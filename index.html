@@ -349,14 +349,27 @@
           </div>
         </article>
         <div class="save_button_container">
-          <button class="save_button">
-            <svg class="save_button_icon" width="28" height="28">
+          <button class="save_button" type="button" id="save-button">
+            <svg class="save_button_icon" width="28" height="28"  aria-hidden="true">
               <use href="#floppy"></use>
             </svg>
             <span class="save_button_text">Сохранить на память</span>
           </button>
         </div>
-      </section>        
+        <dialog class="save_dialog" aria-labelledby="save-dialog-title">
+          <div class="save_dialog_content">
+            <svg class="save_dialog_icon" width="39" height="39" aria-hidden="true">
+              <use href="#floppy"></use>
+            </svg>
+            <p class="save_dialog_text" id="save-dialog-title">
+              Вставьте дискету, чтобы продолжить
+            </p>
+          </div>
+          <button class="card__like-button save_dialog_button" type="button">
+            <span class="button__text">OK</span>
+          </button>
+        </dialog>
+      </section>
     </main>
     <script src="./scripts/like.js"></script>
   </body>
