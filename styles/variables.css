@@ -20,4 +20,6 @@
     transparent 2px 4px
   ),
   linear-gradient(180deg, #e7e7e7 0.01%, #1a1a1a 100%);
+  --accent-color: #000000;
+  --button-text-color: #FFFFFF;
 }
