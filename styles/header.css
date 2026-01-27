@@ -1,7 +1,7 @@
 .header {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   padding-top: 100px;
   padding-bottom: 100px;
 }
@@ -9,31 +9,30 @@
 .header_title_background {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  width: var(--content-width);
+  align-items: center;
   gap: 18px;
-  text-align: center;
+  width: var(--content-width);
   min-height: 327px;
   max-height: 368px;
-  background-color: #FFFFFF;
   border: 2px solid #000000;
+  text-align: center;
+  background-color: #ffffff;
 }
 
 .html-title {
+  color: #000000;
   font-family: var(--accent-font);
   font-weight: var(--font-weight-400);
   font-size: clamp(49px, 6.93vw, 65px);
-  color: #000000;
   line-height: 100%;
 }
 
 .tag-title {
+  color: #000000;
   font-family: var(--accent-font);
   font-weight: var(--font-weight-400);
   font-size: clamp(14px, 3.73vw, 23px);
-  text-transform: uppercase;
-  color: #000000;
   line-height: 100%;
+  text-transform: uppercase;
 }
-

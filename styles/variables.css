@@ -1,25 +1,20 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 
 :root {
-  --main-font: 'Inter-Variable', sans-serif;
-  --accent-font: 'PressStart2P-Regular', sans-serif;
+  --main-font: "Inter-Variable", sans-serif;
+  --accent-font: "PressStart2P-Regular", sans-serif;
   --font-weight-400: 400;
   --font-weight-410: 410;
   --font-weight-715: 715;
   --font-style-bold: Bold;
   --card-text-size: 18px;
   --content-width: clamp(320px, 100%, 700px);
-  --page-background-gradient: repeating-linear-gradient(
-    90deg,
-    #d3d3d3 0 2px,
-    transparent 2px 4px
-  ),
-  repeating-linear-gradient(
-    180deg,
-    #d3d3d3 0 2px,
-    transparent 2px 4px
-  ),
-  linear-gradient(180deg, #e7e7e7 0.01%, #1a1a1a 100%);
+  --page-background-gradient:
+    repeating-linear-gradient(90deg, #d3d3d3 0 2px, transparent 2px 4px),
+    repeating-linear-gradient(180deg, #d3d3d3 0 2px, transparent 2px 4px),
+    linear-gradient(180deg, #e7e7e7 0.01%, #1a1a1a 100%);
   --accent-color: #000000;
-  --button-text-color: #FFFFFF;
+  --button-text-color: #ffffff;
+  --contour-color: #000000;
+  --animation-fill-color: #ff0000;
 }
