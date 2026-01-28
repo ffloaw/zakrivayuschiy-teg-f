@@ -42,7 +42,7 @@ function setButtonText(heart, button) {
 
 const saveButton = document.querySelector('#save-button');
 const saveDialog = document.querySelector('.save_dialog');
-const saveDialogOkButton = document.querySelector('.save_dialog_button');
+const saveDialogOkButton = document.querySelector('.save-dialog__button');
 
 if (saveButton && saveDialog && saveDialogOkButton) {
   saveButton.addEventListener('click', () => {

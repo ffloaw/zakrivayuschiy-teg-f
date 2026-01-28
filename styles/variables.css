@@ -1,12 +1,11 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 
 :root {
-  --main-font: "Inter-Variable", sans-serif;
-  --accent-font: "PressStart2P-Regular", sans-serif;
-  --font-weight-400: 400;
-  --font-weight-410: 410;
-  --font-weight-715: 715;
-  --font-style-bold: Bold;
+  --main-font: "Inter", sans-serif;
+  --accent-font: "Press Start 2P", sans-serif;
+  --font-weight-normal: 400;
+  --font-weight-medium: 410;
+  --font-weight-bold: 715;
   --card-text-size: 18px;
   --content-width: clamp(320px, 100%, 700px);
   --page-background-gradient:

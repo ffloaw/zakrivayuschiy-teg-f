@@ -6,33 +6,36 @@
   padding-bottom: 100px;
 }
 
-.header_title_background {
+.header__title-block {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 18px;
-  width: var(--content-width);
-  min-height: 327px;
-  max-height: 368px;
+  padding-top: 20px;
+  gap: 50px;
+  width: var(--content-width, clamp(320px, 100%, 700px));
+  height: 327px;
   border: 2px solid #000000;
   text-align: center;
   background-color: #ffffff;
+  color: #000000;
+  font-family: var(--accent-font, "Press Start 2P", sans-serif);
+  font-weight: var(--font-weight-normal, 400);
+  line-height: 100%;
 }
 
-.html-title {
-  color: #000000;
-  font-family: var(--accent-font);
-  font-weight: var(--font-weight-400);
+.header__title {
   font-size: clamp(49px, 6.93vw, 65px);
-  line-height: 100%;
+  text-transform: uppercase;
 }
 
-.tag-title {
-  color: #000000;
-  font-family: var(--accent-font);
-  font-weight: var(--font-weight-400);
+.header__subtitle {
   font-size: clamp(14px, 3.73vw, 23px);
-  line-height: 100%;
   text-transform: uppercase;
+}
+
+@media (width >= 467px) {
+  .header__title-block {
+    height: 368px;
+  }
 }
