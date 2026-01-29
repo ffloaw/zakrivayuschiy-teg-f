@@ -12,16 +12,15 @@
   justify-content: center;
   align-items: center;
   padding-top: 20px;
-  gap: 50px;
+  gap: 20px;
   width: var(--content-width, clamp(320px, 100%, 700px));
-  height: 327px;
   border: 2px solid #000000;
   text-align: center;
   background-color: #ffffff;
   color: #000000;
   font-family: var(--accent-font, "Press Start 2P", sans-serif);
   font-weight: var(--font-weight-normal, 400);
-  line-height: 100%;
+  padding: 122px 16px 122px 16px;
 }
 
 .header__title {
@@ -36,6 +35,6 @@
 
 @media (width >= 467px) {
   .header__title-block {
-    height: 368px;
+    padding: 130px 122px 130px 122px;
   }
 }

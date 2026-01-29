@@ -58,12 +58,14 @@
   right: 25px;
   z-index: 1;
   display: flex;
+  text-transform: uppercase;
   justify-self: end;
   font-family: var(--accent-font, "Press Start 2P", sans-serif);
   font-weight: var(--font-weight-medium, 410);
   font-size: 14px;
   text-shadow: 0 0 1px #FFFFFF;
   mix-blend-mode: hard-light;
+  opacity: 0.5;
 }
 
 /* Общие стили для всех кнопок */
@@ -141,6 +143,7 @@
 .save-dialog__button {
   width: 261px;
   height: 38px;
+  text-transform: uppercase;
 }
 
 .card_button_container {
@@ -186,7 +189,7 @@
 
 .save_dialog {
   display: none;
-  width: 341px;
+  width: 353px;
   border: 2px solid #000000;
   padding: 0;
   background-color: #ffffff;
